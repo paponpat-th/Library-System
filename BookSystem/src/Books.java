@@ -142,7 +142,7 @@ public class Books {
         }*/
     }
 
-   public void adDBbook(Book b){
+  public void adDataBook(Book b){
 
        for (int i=0; i<count; i++){
 
@@ -364,7 +364,7 @@ public class Books {
 
     }
 
-    public Book BorrowBook(){
+    public Book borrowBook(){
 
         out.println("Enter Serial No of Book to be Borrow.");
         int sNo = input.nextInt();
@@ -386,7 +386,7 @@ public class Books {
 
     }
 
-    public void ReturnBook(Book b){
+    public void returnBook(Book b){
         LocalDateTime DateObj = LocalDateTime.now();
         DateTimeFormatter FormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         String formattedDate = DateObj.format(FormatObj);

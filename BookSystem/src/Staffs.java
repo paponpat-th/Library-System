@@ -67,14 +67,14 @@ public class Staffs{
         return -1;
 
     }
-    public void BorrowBook(Books book){
+    public void borrowBook(Books book){
         int staffIndex =this.isStaff();
 
         if (staffIndex!=-1){
             System.out.println("Borrow out");
 
             book.showAllBooks();
-            Book b = book.BorrowBook();
+            Book b = book.borrowBook();
             System.out.println("Borrow out");
             if (b!= null){
 
@@ -99,7 +99,7 @@ public class Staffs{
 
     }
 
-    public void ReturnBook(Books book){
+    public void returnBook(Books book){
 
         int staffIndex = this.isStaff();
         if (staffIndex != -1){
@@ -117,7 +117,7 @@ public class Staffs{
 
                 if (sNo == s.borrowedBooks[i].sNo){
 
-                    book.ReturnBook(s.borrowedBooks[i]);
+                    book.returnBook(s.borrowedBooks[i]);
                     s.borrowedBooks[i]=null;
                     return;
 

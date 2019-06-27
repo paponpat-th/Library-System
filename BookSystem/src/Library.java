@@ -68,10 +68,10 @@ public class Library {
                     obStaff.showAllStaff();
                     break;
                 case 7:
-                    obStaff.BorrowBook(ob);
+                    obStaff.borrowBook(ob);
                     break;
                 case 8:
-                    obStaff.ReturnBook(ob);
+                    obStaff.returnBook(ob);
                     break;
                 case 9:
                     var rf = new ReadTxtFile();
